@@ -16,6 +16,7 @@ jwt = JWT(app, authenticate, identity)
 		
 api.add_resource(Student,'/student/<string:name>')
 api.add_resource(UserRegister, '/register')
-app.run()
+if __name__ == "__main__":
+	app.run()
 		
 	
