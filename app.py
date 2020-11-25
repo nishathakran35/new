@@ -8,7 +8,7 @@ from security import authenticate,identity
 
 app=Flask(__name__)
 app.secret_key="123@123"
-api=Api(app)
+#api=Api(app)
 
 #items=[]
 jwt = JWT(app, authenticate, identity)
